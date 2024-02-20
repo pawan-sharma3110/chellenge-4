@@ -1,2 +1,2 @@
-# chellenge-4
-try to fixing layouts with floats
+# Shoping-item
+Adding a simple item chart
