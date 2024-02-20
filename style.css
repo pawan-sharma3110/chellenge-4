@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -10,9 +11,21 @@ body {
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .container {
-    width: 1200px;
-    margin: 0 auto;
+    background-color: red;
+}
+
+.product-img {
+    height: 275px;
+    width: 250px;
+    float: left;
+    margin-right: 40px;
 }
 
 .product {
@@ -44,6 +57,7 @@ body {
 
 .prize {
     font-size: 24px;
+    float: left;
 }
 
 .shiping {
@@ -51,6 +65,20 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     color: #777;
+    float: right;
+    margin-top: 8px;
+}
+
+.product-descriptions {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    width: 243px;
+    float: left;
+    margin-right: 40px;
+    padding-top: 20px;
 }
 
 .information {
@@ -104,11 +132,18 @@ body {
     background-color: green;
 }
 
+.product-details {
+    width: 243px;
+    float: right;
+    padding-right: 50px;
+    margin: 20px;
+}
+
 .details {
     text-transform: uppercase;
     font-size: 16px;
     margin-bottom: 15px;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .details-list {
@@ -136,4 +171,3 @@ body {
     background-color: white;
     cursor: pointer;
 }
-
